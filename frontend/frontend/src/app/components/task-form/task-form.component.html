@@ -1,0 +1,10 @@
+<h2>Nova Tarefa</h2>
+<form (ngSubmit)="addTask()">
+  <input [(ngModel)]="newTask.title" name="title" placeholder="Título" required>
+  <input [(ngModel)]="newTask.description" name="description" placeholder="Descrição">
+  <select [(ngModel)]="newTask.status" name="status">
+    <option value="Pendente">Pendente</option>
+    <option value="Concluída">Concluída</option>
+  </select>
+  <button type="submit">Adicionar</button>
+</form>
